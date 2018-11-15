@@ -1,0 +1,19 @@
+.ellipsis-mul {
+  position: relative;
+  line-height: 1.4em;
+  height: 1.4em;
+  overflow: hidden;
+}
+
+.ellipsis-mul::after {
+  content: '...';
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 20px 1px 45px;
+  background: -webkit-linear-gradient(left, transparent, #fff 55%);
+  background: -o-linear-gradient(right, transparent, #fff 55%);
+  background: -moz-linear-gradient(right, transparent, #fff 55%);
+  background: linear-gradient(to right, transparent, #fff 55%);
+}

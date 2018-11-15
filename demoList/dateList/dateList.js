@@ -143,6 +143,14 @@ function formatTo0X(num) {
     return num;
 }
 
+/**
+ * 时间戳 = 毫秒值 / 1000 （也就是说，时间戳是以秒为单位的）
+ */
+function getTimeStamp () {
+    var timeStamp = Date.parse(new Date())
+    timeStamp = timeStamp / 1000;
+    return timeStamp;
+}
 // 各种日期格式之间的转换
 /**
  * Date对象 转成yyyy-mm-dd
@@ -181,8 +189,58 @@ function formatToYYYY_MM_DD1FromYYYYMMDD(date) {
  */
 function formatToYYYYMMDDFromYYYY_MM_DD(date) {
     var dateStr = date.toString();
-
 }
+/**
+ * 获取某个日期的时间戳
+ * 日期 转成时间戳
+ */
+function formatToTimeStampByDate(date) {
+    var timeStamp = Date.parse(new Date(date));
+    timeStamp = timeStamp / 1000;
+    return timeStamp;
+}
+/**
+ * 时间戳转成日期格式
+ */
+function formatToDateByTimeStamp(timeStamp) {
+    var date = new Date(timeStamp * 1000);
+    // date = date.toLocaleDateString();
+    // 2018/11/15
+    date = date.toLocaleString();
+    // 2018/11/15 上午11:16:00
+    // date = date.toLocaleTimeString();
+    // 上午11:16:00
+    return date;
+}
+/**
+ * 通过正则格式转换（原型）√
+ * 使用方法：var date = new Date(); date.format("yyyyMMdd")
+ * 20181115： yyyyMMdd
+ * 2018-11-15 : yyyy-MM-dd
+ * 2018-11-15 11:33:00 :yyyy-MM-dd hh:mm:ss 这个有点问题
+ */
+Date.prototype.format = function(format) {
+    var date = {
+        'M+': this.getMonth() + 1,
+        'd+': this.getDate(),
+        'h+': this.getHours(),
+        'm+': this.getMinutes(),
+        's+': this.getSeconds(),
+        'q+': Math.floor((this.getMonth() + 3) / 3),
+        'S+': this.getMilliseconds()
+    };
+    if(/(y+)/i.test(format)) {
+        format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length));
+    }
+    for(var k in date) {
+        if(new RegExp("(" + k + ")").test(format)) {
+            format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? date[k] : ("00" + date[k]).substr(("" + date[k]).length));
+        }
+    }
+    return format;
+}
+
+
 use();
 function use() {
     var today = document.getElementById("today");
