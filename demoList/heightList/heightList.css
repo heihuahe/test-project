@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.box-height {
+  width: 20%;
+  height: 200px;
+  padding: 10px;
+  border: 5px solid #999;
+  text-align: center;
+  margin: 20px;
+  box-sizing: border-box；;
+}
