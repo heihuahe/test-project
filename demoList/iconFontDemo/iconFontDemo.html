@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iconFont 使用</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="iconFontDemo.css">
+    <!-- iconfont 链接 http和https 都可以-->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_671603_cxk625u1fb.css">
+</head>
+<body>
+    <div class="center">
+        <h4>iconFont 使用Demo</h4>
+        <div class="content">
+            <div class="icon-font-black">
+                <p>Unicode 黑白</p>
+                <p>图标是彩色的 <i class="t-iconfont">&#xe64b;</i></p>
+                <p>图标是单色的 <i class="t-iconfont">&#xe600;</i></p>
+            </div>
+            <div class="icon-font-black">
+                <p>font-class 黑白</p>
+                <p>图标是彩色的 <i class="iconfont icon-tianxiejibenxinxi"></i></p>
+                <p>图标是单色的 <i class="iconfont icon-yonghudianji"></i></p>
+            </div>
+            <div class="icon-font-black">
+                <p>symbol 彩色！！！</p>
+                <p>图标是彩色的 
+                    <svg class="s-icon" aria-hidden="true">
+                        <use xlink:href="#icon-wancheng"></use>
+                    </svg>
+                </p>
+                <p>图标是单色的 
+                    <svg class="s-icon" aria-hidden="true">
+                        <use xlink:href="#icon-app_icons--"></use>
+                    </svg>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://at.alicdn.com/t/font_671603_cxk625u1fb.js"></script>
+</body>
+</html>
