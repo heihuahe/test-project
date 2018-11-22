@@ -1,0 +1,56 @@
+.box {
+    position: relative;
+    width: 30%;
+    height: 200px;
+    background-color: #9868B9;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+    &-border-top::before {
+        content: '';
+        height: 5px; // 宽度
+        width: 50%; // 长度
+        background-color: #2E163E;
+        position: absolute;
+        left: 20%;
+        top: 0;
+        bottom: auto;
+        right: auto;
+    }
+    &-border-right::before {
+        content: '';
+        height: 50%; // 长度
+        width: 5px; // 宽度
+        background-color: #2E163E;
+        position: absolute;
+        top: 30%;
+        right: 0;
+        left: auto;
+        bottom: auto;
+    }
+    &-border-bottom::before {
+        content: '';
+        height: 5px; // 宽度
+        width: 50%; // 长度
+        background-color: #2E163E;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        top: auto;
+        right: auto;
+    }
+    &-border-left::before {
+        content: '';
+        height: 50%; // 长度
+        width: 5px; // 宽度
+        background-color: #2E163E;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: auto;
+        bottom: auto;
+    }
+}
