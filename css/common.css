@@ -1,14 +1,107 @@
+@charset "UTF-8";
 div.center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*文字*/
+  /*间距*/
 }
 
 div.center .content {
   background: #EEE;
   width: 1000px;
   height: 500px;
+}
+
+div.center .flex-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+div.center .flex-row .row-1 {
+  flex: 1;
+}
+
+div.center .flex-row .row-2 {
+  flex: 2;
+}
+
+div.center .flex-row .row-3 {
+  flex: 3;
+}
+
+div.center .flex-row .row-4 {
+  flex: 4;
+}
+
+div.center .flex-row .row-5 {
+  flex: 5;
+}
+
+div.center .flex-row .row-6 {
+  flex: 6;
+}
+
+div.center .flex-row .row-7 {
+  flex: 7;
+}
+
+div.center .flex-row .row-8 {
+  flex: 8;
+}
+
+div.center .flex-row .row-9 {
+  flex: 9;
+}
+
+div.center .flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.center .flex-col .col-1 {
+  flex: 1;
+}
+
+div.center .flex-col .col-2 {
+  flex: 2;
+}
+
+div.center .flex-col .col-3 {
+  flex: 3;
+}
+
+div.center .flex-col .col-4 {
+  flex: 4;
+}
+
+div.center .flex-col .col-5 {
+  flex: 5;
+}
+
+div.center .flex-col .col-6 {
+  flex: 6;
+}
+
+div.center .flex-col .col-7 {
+  flex: 7;
+}
+
+div.center .flex-col .col-8 {
+  flex: 8;
+}
+
+div.center .flex-col .col-9 {
+  flex: 9;
+}
+
+div.center .text-center {
+  text-align: center;
+}
+
+div.center .margin-lr-20 {
+  margin: 0 20px;
 }

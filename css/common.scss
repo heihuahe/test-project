@@ -8,4 +8,79 @@ div.center {
         width: 1000px;
         height: 500px;
     }
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .row-1 {
+        flex: 1;
+      }
+      .row-2 {
+        flex: 2;
+      }
+      .row-3 {
+        flex: 3;
+      }
+      .row-4 {
+        flex: 4;
+      }
+      .row-5 {
+        flex: 5;
+      }
+      .row-6 {
+        flex: 6;
+      }
+      .row-7 {
+        flex: 7;
+      }
+      .row-8 {
+        flex: 8;
+      }
+      .row-9 {
+        flex: 9;
+      }
+    }
+    
+    .flex-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .col-1 {
+        flex: 1;
+      }
+      .col-2 {
+        flex: 2;
+      }
+      .col-3 {
+        flex: 3;
+      }
+      .col-4 {
+        flex: 4;
+      }
+      .col-5 {
+        flex: 5;
+      }
+      .col-6 {
+        flex: 6;
+      }
+      .col-7 {
+        flex: 7;
+      }
+      .col-8 {
+        flex: 8;
+      }
+      .col-9 {
+        flex: 9;
+      }
+    }
+    /*文字*/
+
+    /*间距*/
+    .text-center {
+      text-align: center;
+    }
+    .margin-lr-20 {
+      margin: 0 20px;
+    }
+
 }
