@@ -1,0 +1,27 @@
+.parent {
+  position: relative;
+  .child {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+}
+.img-content {
+  line-height: 400px;
+  img {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+  }
+}
+.table-content {
+  display: table;
+  .item {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}

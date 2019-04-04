@@ -1,0 +1,39 @@
+.box-100 {
+  width: 100px;
+  height: 100px;
+  border: 20px solid transparent;
+  border-color: #E08031 #199475 #0B6E48 #044D22;
+}
+
+.box-0-full {
+  width: 0px;
+  height: 0px;
+  border: 50px solid transparent;
+  border-color: #E08031 #199475 #0B6E48 #044D22;
+}
+
+.box-0-triangle {
+  width: 0px;
+  height: 0px;
+  border: 50px solid transparent;
+  border-left-color: #044D22;
+}
+
+.p-0-triangle {
+  background-color: #199475;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: 1px solid #EFEFEF;
+  position: relative;
+  padding: 0 30px 0 20px;
+}
+
+.p-0-triangle:after {
+  position: absolute;
+  content: '';
+  top: 5px;
+  right: 0px;
+  border: 10px solid transparent;
+  border-left-color: #C7CEB2;
+}

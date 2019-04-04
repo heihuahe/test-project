@@ -1,0 +1,23 @@
+.color {
+  width: 200px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #EFEFEF;
+  &::-webkit-input-placeholder {
+    color: #0B6E48;
+  }
+  &:-moz-placeholder {
+    color: #0B6E48;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: #0B6E48;
+    opacity: 1;
+  }
+  &::-ms-input-placeholder {
+    color: #0B6E48;
+  }
+  &::placeholder {
+    color: #0B6E48;
+  }
+}
