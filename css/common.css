@@ -18,6 +18,10 @@ div.center .content {
   width: 1000px;
   height: 500px;
 }
+div.center .content-w {
+  background: #EEE;
+  width: 1000px;
+}
 
 div.center .flex-row {
   display: flex;
