@@ -1,7 +1,24 @@
 img {
   width: 100%;
 }
+
 .title {
-  line-height: 150px;
+  line-height: 80px;
   font-size: 32px;
+  width: 1000px;
+  margin: 30px 0 30px 0;
+}
+
+.title p {
+  padding: 0 20px;
+  background-color: #0B6E48;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 64px;
+  color: #fff;
+}
+
+.title .active {
+  background-color: #C7CEB2;
+  color: #303133;
 }
