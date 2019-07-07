@@ -7,6 +7,12 @@
     <title>图片优化</title>
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="index.css">
+    <style>
+        img{
+            width: 500px;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
     <div class="center">
@@ -18,19 +24,32 @@
             <p id="imgResponsive">优化——响应式图片</p>
         </div>
         <div class="content-w">
-          <img src="../../img/image-4.jpg">
-          <img src="../../img/image-1.jpg">
-          <img src="../../img/image-2.jpg">
-          <img src="../../img/image-3.jpg">
-          <img src="../../img/image-5.jpg">
-          <img src="../../img/image-6.jpg">
-          <img src="../../img/image-7.jpg">
-          <img src="../../img/image-8.jpg">
-          <img src="../../img/image-9.jpg">
-          <img src="../../img/image-10.jpg">
+            <!-- 原生的 -->
+          <img src="../../img/loading.gif" data-src="../../img/image-4.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-1.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-2.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-3.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-5.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-6.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-7.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-8.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-9.jpg">
+          <img src="../../img/loading.gif" data-src="../../img/image-10.jpg">
+          <!-- echo的 -->
+          <!-- <img src="../../img/loading.gif" data-echo="../../img/image-4.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-1.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-2.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-3.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-5.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-6.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-7.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-8.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-9.jpg">
+          <img src="../../img/loading.gif" data-echo="../../img/image-10.jpg"> -->
         </div>
     </div>
     <script src="../../js/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="../../js/echo.js"></script>
+    <script src="lazyload.js"></script>
 </body>
 </html>
