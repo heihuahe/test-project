@@ -18,8 +18,8 @@
             <a href="imgResponsive.html">优化——响应式图片</a>
         </div>
         <div class="content-w">
-          <img src="../../img/image-4.jpg">
-          <img src="../../img/image-1.jpg">
+          <!-- <img src="../../img/image-4.jpg">
+          <img src="../../img/image-1.jpg"> -->
           <img src="../../img/image-2.jpg">
           <img src="../../img/image-3.jpg">
           <img src="../../img/image-5.jpg">
@@ -29,6 +29,26 @@
           <img src="../../img/image-9.jpg">
           <img src="../../img/image-10.jpg">
         </div>
+        <!-- 预加载的东西 -->
+        <div id="preload-4"></div>
+        <div id="preload-1"></div>
+        <!-- <div class="hidden">
+            <script type="text/javascript">
+                var images = new Array()
+                function preload() {
+                    for (i = 0; i < preload.arguments.length; i++) {
+                        images[i] = new Image()
+                        images[i].src = preload.arguments[i]
+                    }
+                }
+                preload(
+                    "../../img/image-4.jpg",
+                    "../../img/image-1.jpg",
+                    "../../img/image-2.jpg",
+                    "../../img/image-3.jpg"
+                )
+            </script>
+        </div> -->
     </div>
     <script src="../../js/jquery.min.js"></script>
     <script src="index.js"></script>

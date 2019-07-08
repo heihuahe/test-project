@@ -32,7 +32,6 @@ function lazyload() {
   }
   }
 }
-// lazyload()
 var loadImages = lazyload();
 loadImages();
 window.addEventListener('scroll', throttle(loadImages, 500, 1000), false);

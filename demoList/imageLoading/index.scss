@@ -19,3 +19,21 @@ img{
     color: #303133;
   }
 }
+.hidden {
+  display: none;
+}
+#preload-1 {
+  background: url('../../img/image-1.jpg') no-repeat -9999px -9999px;
+}
+#preload-4 {
+  background: url('../../img/image-4.jpg') no-repeat -9999px -9999px;
+}
+// css3的写法，可以用单个现有元素预加载所有所需的图片。
+.preload-images {
+  background: url('../../img/image-1.jpg') no-repeat -9999px -9999px;
+  background: url('../../img/image-2.jpg') no-repeat -9999px -9999px,
+    url('../../img/image-3.jpg') no-repeat -9999px -9999px,
+    url('../../img/image-4.jpg') no-repeat -9999px -9999px,
+    url('../../img/image-5.jpg') no-repeat -9999px -9999px,
+    url('../../img/image-6.jpg') no-repeat -9999px -9999px
+}
