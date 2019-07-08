@@ -7,27 +7,41 @@
     <title>图片优化</title>
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="index.css">
+    <style>
+      .sprite {
+        background: url('../../img/css_sprites.png');
+      }
+      .icon-30 {
+        width: 30px;
+        height: 30px;
+      }
+      .icon-64 {
+        width: 64px;
+        height: 64px;
+      }
+      .icon-48 {
+        width: 48px;
+        height: 48px;
+      }
+    </style>
 </head>
 <body>
     <div class="center">
         <div class="title">
-            <p id="index">图片优化(初始)</p>
-            <p id="imgSprite">优化——雪碧图</p>
-            <p id="lazyload">优化——js懒加载</p>
-            <p id="preload">优化——js预加载</p>
-            <p id="imgResponsive">优化——响应式图片</p>
+          <a href="index.html">图片优化(初始)</a>
+          <a href="imgSprite.html">优化——雪碧图</a>
+          <a href="lazyload.html">优化——js懒加载</a>
+          <a href="preload.html">优化——js预加载</a>
+          <a href="imgResponsive.html">优化——响应式图片</a>
         </div>
         <div class="content-w">
-          <img src="../../img/image-4.jpg">
-          <img src="../../img/image-1.jpg">
-          <img src="../../img/image-2.jpg">
-          <img src="../../img/image-3.jpg">
-          <img src="../../img/image-5.jpg">
-          <img src="../../img/image-6.jpg">
-          <img src="../../img/image-7.jpg">
-          <img src="../../img/image-8.jpg">
-          <img src="../../img/image-9.jpg">
-          <img src="../../img/image-10.jpg">
+          <!-- 在一个css中的背景图片引入雪碧图，然后根据那个图片在雪碧图中的位置和大小，通过定位background-position 来定位到对应的图片 -->
+          <div class="sprite icon-64" style="background-position: -10px -10px;"></div>
+          <div class="sprite icon-64" style="background-position: -94px -10px;"></div>
+          <div class="sprite icon-48" style="background-position: -178px -10px;"></div>
+          <div class="sprite icon-30" style="background-position: -10px -215px;"></div>
+          <div class="sprite" style="width: 284px; height: 257px;"></div>
+          <div class="sprite" style="width: 60px; height: 60px;border:1px solid #0B6E48;"></div>
         </div>
     </div>
     <script src="../../js/jquery.min.js"></script>

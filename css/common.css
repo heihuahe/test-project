@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 div.center {
   display: flex;
   flex-direction: column;
@@ -18,9 +22,11 @@ div.center .content {
   width: 1000px;
   height: 500px;
 }
+
 div.center .content-w {
   background: #EEE;
   width: 1000px;
+  margin-bottom: 500px;
 }
 
 div.center .flex-row {

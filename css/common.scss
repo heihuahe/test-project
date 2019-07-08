@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 div.center {
     display: flex;
     flex-direction: column;
@@ -11,6 +14,11 @@ div.center {
         background: #EEE;
         width: 1000px;
         height: 500px;
+    }
+    .content-w {
+      background: #EEE;
+      width: 1000px;
+      margin-bottom: 500px;
     }
     .flex-row {
       display: flex;
