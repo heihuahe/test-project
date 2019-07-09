@@ -7,6 +7,37 @@
     <title>图片优化</title>
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="index.css">
+    <style>
+      .content-w {
+        width: 480px !important;
+      }
+      .placeholder {
+        background-color: #f6f6f6;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .placeholder img {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: opacity 1s linear;
+      }
+
+      .placeholder img.loaded {
+        opacity: 1;
+      }
+
+      .img-small {
+        filter: blur(50px); 
+        /* this is needed so Safari keeps sharp edges */
+        transform: scale(1);
+      }
+    </style>
 </head>
 <body>
     <div class="center">
@@ -16,21 +47,19 @@
           <a href="lazyload.html">优化——js懒加载</a>
           <a href="preload.html">优化——js预加载</a>
           <a href="imgResponsive.html">优化——响应式图片</a>
+          <a href="gradualLoad.html">优化——渐进式加载</a>
         </div>
         <div class="content-w">
-          <img src="../../img/image-4.jpg">
-          <img src="../../img/image-1.jpg">
-          <img src="../../img/image-2.jpg">
-          <img src="../../img/image-3.jpg">
-          <img src="../../img/image-5.jpg">
-          <img src="../../img/image-6.jpg">
-          <img src="../../img/image-7.jpg">
-          <img src="../../img/image-8.jpg">
-          <img src="../../img/image-9.jpg">
-          <img src="../../img/image-10.jpg">
+            <div class="placeholder" data-large="../../img/image-4.jpg">
+              <img src="../../img/image-4-60.png" class="img-small">
+              <div style="padding-bottom: 66.6%;"></div>
+            </div>
+            <p class="title">原图</p>
+            <img src="../../img/image-4.jpg">
         </div>
     </div>
     <script src="../../js/jquery.min.js"></script>
+    <script src="gradualLoad.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

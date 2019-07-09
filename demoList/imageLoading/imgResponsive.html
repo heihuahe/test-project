@@ -7,6 +7,11 @@
     <title>图片优化</title>
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="index.css">
+    <style>
+      /* .content-w {
+        width: 480px !important;
+      } */
+    </style>
 </head>
 <body>
     <div class="center">
@@ -16,19 +21,24 @@
           <a href="lazyload.html">优化——js懒加载</a>
           <a href="preload.html">优化——js预加载</a>
           <a href="imgResponsive.html">优化——响应式图片</a>
+          <a href="gradualLoad.html">优化——渐进式加载</a>
         </div>
         <div class="content-w">
+          <!-- <picture>  
+            <source srcset="../../img/image-4-m.png" media="(min-width: 800px) and (max-width: 1500px)">  
+            <source srcset="../../img/image-4-s.png" media="(min-width: 500px) and (max-width: 799px)">  
+            <img src="../../img/image-4.jpg">  
+          </picture> -->
+          <img srcset="../../img/image-4.jpg 3840w,
+              ../../img/image-4-1500.png 1500w,
+              ../../img/image-4-300.png 300w"
+              sizes="(min-width:800px) and (max-width: 1500px) 1500px,
+              (min-width: 300px) 300px"
+              src="../../img/image-4.jpg">
+          <p class="title">原图</p>
           <img src="../../img/image-4.jpg">
-          <img src="../../img/image-1.jpg">
-          <img src="../../img/image-2.jpg">
-          <img src="../../img/image-3.jpg">
-          <img src="../../img/image-5.jpg">
-          <img src="../../img/image-6.jpg">
-          <img src="../../img/image-7.jpg">
-          <img src="../../img/image-8.jpg">
-          <img src="../../img/image-9.jpg">
-          <img src="../../img/image-10.jpg">
         </div>
+        
     </div>
     <script src="../../js/jquery.min.js"></script>
     <script src="index.js"></script>
