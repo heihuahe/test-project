@@ -11,7 +11,7 @@
       .content-w {
         width: 480px !important;
       }
-      .placeholder {
+      /* .placeholder {
         background-color: #f6f6f6;
         background-size: cover;
         background-repeat: no-repeat;
@@ -34,9 +34,87 @@
 
       .img-small {
         filter: blur(50px); 
-        /* this is needed so Safari keeps sharp edges */
         transform: scale(1);
+      } */
+      /* .figure {
+          position: relative;
+          width: 200px;
+          overflow: hidden;
       }
+
+      .aspect-ratio-fill {
+          padding-bottom: 66.67%;
+      }
+
+      .figure img,
+      .figure canvas {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+          opacity: 1;
+          transition: opacity 2s linear;
+      }
+
+      .canvas.loaded {
+          opacity: 0;
+      }
+
+      .small-img {
+          display: none;
+      } */
+      .full {
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+  }
+  
+  .space {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .progressive {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .progressive img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0 none;
+  }
+  
+  .progressive img.preview {
+    filter: blur(2vw);
+    transform: scale(1.05);
+  }
+  .progressive img.hide {
+    opacity: 0;
+  }
+  
+  .progressive img.origin {
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: origin 1s ease-out;
+  }
+  
+  @keyframes origin {
+    0% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
     </style>
 </head>
 <body>
@@ -50,9 +128,23 @@
           <a href="gradualLoad.html">优化——渐进式加载</a>
         </div>
         <div class="content-w">
-            <div class="placeholder" data-large="../../img/image-4.jpg">
+          <!-- 1. css filter模糊处理 -->
+            <!-- <div class="placeholder" data-large="../../img/image-4.jpg">
               <img src="../../img/image-4-60.png" class="img-small">
               <div style="padding-bottom: 66.6%;"></div>
+            </div> -->
+            <!-- 2. 渐进式图片 -->
+            <!-- <img src="../../img/image-4-heart.jpg"> -->
+            <!-- 3. canvas 模糊处理 -->
+            <!-- <div class="figure" data-large="../../img/image-4.jpg">
+                <div class="aspect-ratio-fill"></div>
+                <img id="smallImg" class="small-img" src="../../img/image-4-60.png" alt="">
+                <canvas id="canvas" class="canvas"></canvas>
+                <img class="big-img" data-src="../../img/image-4.jpg">
+            </div> -->
+            <div class="space"></div>
+            <div class="progressive">
+              <img class="preview lazy" data-src="../../img/image-4.jpg" src="../../img/image-4-60.png" />
             </div>
             <p class="title">原图</p>
             <img src="../../img/image-4.jpg">
