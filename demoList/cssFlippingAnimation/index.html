@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>css动画，图片翻转</title>
+  <link href="index.css" rel="stylesheet">
+  <link href="../../css/common.css" rel="stylesheet">
+</head>
+<body>
+  <div class="center">
+    <h4>css动画，图片翻转</h4>
+    <div class="content flex-row">
+      <!-- ontouchstart :允许在触摸屏上交互 -->
+      <div class="filp-container-y" ontouchstart="flip(this)">
+        <div class="flipper">
+          <div class="front bg-199475 center">
+            <!-- 图片正面 -->
+            <span>我是正面正面-横着转</span>
+          </div>
+          <div class="back bg-minions-2 center">
+            <!-- 图片背面 -->
+            <span>背面-看什么看！</span>
+          </div>
+        </div>
+      </div>
+      <div class="filp-container-x margin-left-50" ontouchstart="flip(this)">
+        <div class="flipper">
+          <div class="front bg-199475 center">
+            <!-- 图片正面 -->
+            <span>我是正面正面-竖着转</span>
+          </div>
+          <div class="back bg-nonra-1 center">
+            <!-- 图片背面 -->
+            <span>背面</span>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

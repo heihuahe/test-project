@@ -1,23 +1,49 @@
-.color {
+.color-0B6E48 {
   width: 200px;
   line-height: 30px;
   border-radius: 5px;
-  border: 1px solid #EFEFEF;
-  &::-webkit-input-placeholder {
-    color: #0B6E48;
-  }
-  &:-moz-placeholder {
+  border: 1px solid #ccc;
+  /* 伪类 */
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
     color: #0B6E48;
     opacity: 1;
   }
-  &::-moz-placeholder {
+  /* 伪元素 */
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color: #0B6E48;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
     color: #0B6E48;
     opacity: 1;
   }
-  &::-ms-input-placeholder {
+  &::-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #0B6E48;
   }
   &::placeholder {
     color: #0B6E48;
   }
+}
+.color-E08031 {
+  width: 200px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  &::placeholder {
+    color: #E08031;
+  }
+}
+.color-7A297B {
+  width: 200px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  &::placeholder {
+    color: #7A297B;
+  }
+}
+.color-default {
+  width: 200px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }

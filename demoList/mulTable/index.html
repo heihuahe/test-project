@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>table的多层嵌套</title>
+  <!-- <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="index.css"> -->
+</head>
+
+<body>
+  <div class="center">
+    <h4>table的多层嵌套</h4>
+    <div class="content">
+
+      <table class="outTable">
+        <thead>
+          <tr>
+            <td width="160px">班级名称</td>
+            <td width="150px">学生名称</td>
+            <td width="150px">课程类型</td>
+            <td width="150px">课程名称</td>
+            <td>课程成绩</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>信息与计算科学1班</td>
+            <td colspan="4">
+              <table frame="void" class="inTable">
+                <tr>
+                  <td width="149px">张三</td>
+                  <td colspan="3">
+                    <table frame="void" class="inTable">
+                      <tr>
+                        <td width="149px">理科</td>
+                        <td colspan="2">
+                          <table frame="void" class="inTable">
+                            <tr>
+                              <td width="149px">高等数学</td>
+                              <td>80</td>
+                            </tr>
+                            <tr>
+                              <td>物理</td>
+                              <td>85</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="149px">文科</td>
+                        <td colspan="2">
+                          <table frame="void" class="inTable">
+                            <tr>
+                              <td width="149px">大学语文</td>
+                              <td>80</td>
+                            </tr>
+                            <tr>
+                              <td>大学英语</td>
+                              <td>85</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="149px">李四</td>
+                  <td colspan="3">
+                    <table frame="void" class="inTable">
+                      <tr>
+                        <td width="149px">理科</td>
+                        <td colspan="2">
+                          <table frame="void" class="inTable">
+                            <tr>
+                              <td width="149px">高等数学</td>
+                              <td>80</td>
+                            </tr>
+                            <tr>
+                              <td>物理</td>
+                              <td>85</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="149px">文科</td>
+                        <td colspan="2">
+                          <table frame="void" class="inTable">
+                            <tr>
+                              <td width="149px">大学语文</td>
+                              <td>80</td>
+                            </tr>
+                            <tr>
+                              <td>大学英语</td>
+                              <td>85</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content">
+      <!-- <table border='1' style="text-align: center;border-collapse: collapse;padding: 0;margin: 0;">
+          <tr>
+            <th width='100px'>考核项目</th>
+            <th width='300px' style="max-width: 300px; word-break: break-all;">考核标准</th>
+            <th width='100px'>标准分</th>
+            <th width='100px'>考评分</th>
+          </tr>
+          <tr>
+            <td>Bill Gates</td>
+            <td colspan='3'>
+                <table frame='void' border='1' style="text-align: center;border-collapse: collapse;padding: 0;margin: 0;">
+                      <tr>
+                              <td width='300px' style="max-width: 300px;word-break: break-all;">1111我都急哭了姐夫额较低哦吃了什么小几岁我说拉天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸jjjuuuytrwwqdfghjkjkkmmnbvcxzafghjopiuykkm</td>
+                              <td width='100px'>1111</td>
+                              <td width='100px'>1111</td>
+                      </tr>
+                      <tr>
+                              <td width='300px' style="max-width: 300px;word-break: break-all;">1111我都急哭了姐夫额较低哦吃了什么小几岁我说拉jjjuuuytrwwqdfghjkjkkmmnbvcxzafghjopiuykkm</td>
+                              <td width='100px'>555</td>
+                              <td width='100px'>555</td>
+                      </tr>
+              </table>
+              </td>
+          </tr>
+          <tr>
+            <td>Bill Gates</td>
+            <td colspan='3'>
+                <table frame='void' border='1' style="text-align: center;border-collapse: collapse;padding: 0;margin: 0;">
+                      <tr>
+                              <td width='300px' style="max-width: 300px;word-break: break-all;">1111我都急哭了姐夫额较低哦吃了什么小几岁我说拉天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸天呐撸jjjuuuytrwwqdfghjkjkkmmnbvcxzafghjopiuykkm</td>
+                              <td width='100px'>1111</td>
+                              <td width='100px'>1111</td>
+                      </tr>
+                      <tr>
+                              <td width='300px' style="max-width: 300px;word-break: break-all;">1111我都急哭了姐夫额较低哦吃了什么小几岁我说拉jjjuuuytrwwqdfghjkjkkmmnbvcxzafghjopiuykkm</td>
+                              <td width='100px'>555</td>
+                              <td width='100px'>555</td>
+                      </tr>
+              </table>
+              </td>
+          </tr>
+          </table> -->
+      <h4>基本信息：</h4>
+      <p>考核对象类型：物业</p>
+      <p>考核对象名称：70</p>
+      <p>考核周期：</p>
+      <p>考核模板：</p>
+      <p>考核人：1</p>
+      <p>考核时间：2019-10-20</p>
+      <p>备注：</p>
+      <table border='1' style="text-align: center;border-collapse: collapse;padding: 0;margin: 0;">
+        <tr>
+          <th width='200px'>考核项目</th>
+          <th width='500px'>考核标准</th>
+          <th width='100px'>标准分</th>
+          <th width='100px'>考评分</th>
+        </tr>
+        <tr>
+          <td width="200px" rowspan="2">项目1</td>
+          <td>考核标准</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>考核标准</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td width="200px" rowspan="2">项目2</td>
+          <td>考核标准</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

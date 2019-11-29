@@ -1,0 +1,66 @@
+.filp-container-y {
+  perspective: 1000px;
+  &:hover .flipper,&.hover .flipper {
+    transform: rotateY(180deg);
+  }
+  /* 翻转速度 */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    .front, .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    /* 窗口正面 */
+    .front {
+      z-index: 2;
+      transform: rotateY(0deg);
+    }
+    /* 窗口背面 */
+    .back {
+      transform: rotateY(180deg)
+    }
+  }
+}
+.filp-container-y,.filp-container-y .front,.filp-container-y .back {
+  width: 320px;
+  height: 480px;
+  border: 1px solid #ccc;
+}
+/* 竖着转 */
+.filp-container-x,.filp-container-x .front,.filp-container-x .back {
+  width: 320px;
+  height: 400px;
+  border: 1px solid #ccc;
+}
+.filp-container-x {
+  perspective: 1000px;
+  &:hover .flipper,&.hover .flipper {
+    transform: rotateX(-180deg);
+  }
+  /* 翻转速度 */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform-origin: 100% 200px; /*是容器高度的一半*/
+    .front, .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    /* 窗口正面 */
+    .front {
+      z-index: 2;
+      transform: rotateX(0deg);
+    }
+    /* 窗口背面 */
+    .back {
+      transform: rotateX(180deg)
+    }
+  }
+}

@@ -140,6 +140,10 @@ div.center .btn-default {
   color: #E08031;
 }
 
+.font-303133 {
+  color: #303133;
+}
+
 .bg-E08031 {
   background-color: #E08031;
 }
@@ -185,9 +189,50 @@ div.center .btn-default {
   background-color: #404040;
 }
 
+.bg-minions-2 {
+  background: url("../img/minions-2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-minions-1 {
+  background: url("../img/minions-1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-nonra-1 {
+  background: url("../img/noona-1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 /*布局*/
 .flex-col-v-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-left-50 {
+  margin-left: 50px;
+}
+
+.btn {
+  border: 1px solid #ccc;
+  line-height: 32px;
+  padding: 0 8px;
+  text-align: center;
+  max-width: 50px;
+  border-radius: 5px;
+  background: #199475;
+  color: #fff;
 }

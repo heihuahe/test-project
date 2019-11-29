@@ -1,0 +1,49 @@
+@charset "UTF-8";
+.pseudo-demo {
+  line-height: 32px;
+  border: 1px solid #ccc;
+  padding: 20px 20px;
+  position: relative;
+  /* 伪类 */
+  /* 伪元素 */
+}
+
+.pseudo-demo p:nth-child(2) {
+  background-color: #0B6E48;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pseudo-demo .font-beauty {
+  background-color: #0B6E48;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pseudo-demo p:nth-child(4) {
+  position: relative;
+  font-weight: bold;
+}
+
+.pseudo-demo p:nth-child(4)::after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 18px;
+  top: 7px;
+  left: -10px;
+  background-color: #0B6E48;
+}
+
+.pseudo-demo .title {
+  position: absolute;
+  display: inline-block;
+  font-size: 19px;
+  font-weight: bolder;
+  color: #0B6E48;
+  bottom: 25px;
+  left: 10px;
+  line-height: 25px;
+}
